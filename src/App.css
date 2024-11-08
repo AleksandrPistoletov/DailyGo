@@ -1,0 +1,815 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+button {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убирает рамку */
+    cursor: pointer; /* Меняет курсор на указатель */
+    
+    transition: transform 0.3s ease; /* Плавный переход для эффекта нажатия */
+}
+
+    button:active {
+        transform: translateY(2px); /* Смещение кнопки вниз при нажатии */
+    }
+
+
+
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: local('Poppins-Black'), url('../fonts/Poppins-Black.ttf') format('truetype');
+}
+
+
+/* CSS */
+html, body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    
+}
+
+
+
+
+
+body {
+    background-color: #1E1F21;
+    font-family: 'Orbitron-Regular', sans-serif;
+}
+
+
+
+
+
+
+
+.welcome-page {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение заголовка и контейнера кнопок */
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали */
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+
+
+
+
+
+.welcome-bitton-singup {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/welcome-bitton-singup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.welcome-bitton-singin {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/welcome-bitton-singin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sign-in-page-singup {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/sign-in-page-singup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+input {
+    text-align: center; /* Центрирует placeholder и текст пользователя */
+    
+    outline: none; /* Убирает стандартное выделение при фокусе */
+    border: 1px solid #ccc; /* Цвет и стиль границы */
+    
+    border-radius: 8px; /* Скруглённые углы */
+}
+
+    input::placeholder {
+        text-align: center; 
+    }
+
+
+
+
+.welcome-page-container {
+    width: 40vw;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 1.458vw;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; 
+    flex-direction: row; 
+}
+
+
+
+
+
+
+.sign-up-page-container {
+    width: 40vw;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 1.458vw;
+}
+
+
+.sign-up-page-logo {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/sign-up-page-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 2vh;
+}
+
+
+
+.sign-in-page, .sign-up-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+
+.sign-up-page-singup {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/welcome-bitton-singup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.sign-up-page-singin {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/sign-up-page-singin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+
+
+
+
+
+
+
+
+.home-header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #2E2E39;
+    display: flex;
+    align-items: center; 
+    border-bottom: 2px solid #565557;
+}
+
+.home-header-logo {
+    margin-left: 4vw;
+    color: white;
+    height: 3.666vh;
+    
+    width: 15.986vw;
+    background-image: url('../IMG/home-header-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-header-button-profile {
+    margin-left: 75vw;
+
+   
+    height: 1.562vw;
+    width: 1.562vw;
+    background-image: url('../IMG/home-header-button-profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+.home-content{
+    display:flex;
+}
+
+
+
+
+
+
+
+
+
+
+.home-menu-left {
+    height: 100vh;
+    width: 5vw;
+    background-color: #2E2E39;
+    transition: width 0.3s ease, padding-left 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 2px solid #565557;
+}
+
+    .home-menu-left.active {
+        width: 15vw;
+        padding-left: 10px; 
+    }
+
+.home-menu-left-button-create-task {
+    width: 2.083vw;
+    height: 3.703vw;
+    background-image: url('../IMG/home-menu-left-button-create-task.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: width 0.3s ease, height 0.3s ease, background-image 0.3s ease; 
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+    .home-menu-left-button-create-task.active {
+        width: 9.687vw;
+        height: 6.666vh;
+        background-image: url('../IMG/home-menu-left-button-create-task-active.svg');
+    }
+
+
+.home-menu-left-button-create-task-home {
+    width: 2.083vw;
+    height: 3.703vw;
+    background-image: url('../IMG/home-menu-left-button-create-task-home.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: width 0.3s ease, height 0.3s ease, background-image 0.3s ease; 
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+    .home-menu-left-button-create-task-home.active {
+        width: 9.687vw;
+        height: 6.666vh;
+        background-image: url('../IMG/home-menu-left-button-create-task-home-active.svg');
+    }
+
+.home-menu-left-button-create-task-calendar {
+    width: 2.083vw;
+    height: 3.703vw;
+    background-image: url('../IMG/home-menu-left-button-create-task-calendar.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: width 0.3s ease, height 0.3s ease, background-image 0.3s ease; 
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+    .home-menu-left-button-create-task-calendar.active {
+        width: 9.687vw;
+        height: 6.666vh;
+        background-image: url('../IMG/home-menu-left-button-create-task-calendar-active.svg');
+    }
+
+.home-menu-left-button {
+    margin-bottom: 7vh;
+    width: 1.666vw;
+    height: 1.666vw;
+    background-image: url('../IMG/home-menu-left-button.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+    .home-menu-left-button.active {
+        background-image: url('../IMG/home-menu-left-button-active.svg');
+    }
+
+
+
+
+
+
+
+    .diogramm1 {
+        width: 20vw;
+        height: 20vh;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-content-right {
+    width: 85vw;
+    height: 80vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    
+    transition: width 0.3s ease;
+}
+    .home-content-right.active {
+
+        width: 75vw;
+    }
+
+
+
+
+
+
+.home-content-right-up {
+    width: 100%;
+    height: 10vh;
+    color:white;
+}
+
+
+
+
+
+
+.home-content-right-lw {
+    width: 100%;
+    height: 65vh;
+    background-color: #808080;
+    display:flex;
+}
+
+
+
+
+
+
+.chart-container {
+    width: 20vw;
+    height: 15vh;
+}
+
+
+.bar-chart-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .bar-chart-container .tooltip {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        display: none;
+    }
+
+    .bar-chart-container:hover .tooltip {
+        display: block;
+    }
+
+
+
+
+.home-content-right-lw-1{
+    margin-left:4vw;
+}
+
+
+
+
+.home-content-right-lw-1,
+.home-content-right-lw-2 {
+    margin-right: 6vw;
+}
+
+
+
+
+
+
+.home-content-right-lw-3 {
+    justify-content: flex-end;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    z-index:2;
+}
+
+    .overlay.exiting {
+        animation: fadeOut 0.5s forwards;
+    }
+
+.task-form-container {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .task-form-container.exiting {
+        animation: slideOut 0.5s forwards;
+    }
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-form input, .task-form textarea, .task-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+.profile-container {
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    display:flex;
+}
+
+.slide-down {
+    animation-name: slideDown;
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation-name: slideUp;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+
+
+
+.profile-container-block-photo {
+    height: 10.562vw;
+    width: 10.562vw;
+    background-image: url('../IMG/profile-container-block-photo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+
+.profile-container-block-data-name {
+    margin-top: 3vh;
+}
+
+.profile-container-block-projects {
+    margin-top: 3vh;
+}
+
+
+
+
+.profile-container-block-email {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/profile-container-block-email.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3vh;
+}
+
+
+.profile-container-block-friends {
+    width: 7.760vw;
+    height: 4.537vh;
+    background-image: url('../IMG/profile-container-block-friends.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+.weekly-calendar {
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.calendar-days {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .calendar-day:hover {
+        background-color: #d3d3d3; 
+    }
+
+.task-popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: top 0.4s ease;
+    z-index: 20;
+}
+
+.slide-in {
+    top: 10%;
+}
+
+.slide-out {
+    top: 100%;
+}
+
+.close-popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.calendar-days {
+    background-color: white;
+    border-radius: 8px; 
+}
+
+
+.task-title,
+.task-controls {
+    margin-bottom: 5px; 
+}
+
+.toggle-description-button,
+.complete-task-button {
+    border: 1px solid #333;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .toggle-description-button:hover,
+    .complete-task-button:hover {
+        background-color: #e0e0e0; 
+    }
+
+
+
+.home-zag{
+    margin-top:13vh;
+}
